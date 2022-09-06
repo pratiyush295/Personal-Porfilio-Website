@@ -1,0 +1,715 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.sidebar {
+  /* position:fixed; */
+  /* top: 0px; */
+  position: absolute;
+  font-family: "Fira Sans", sans-serif;
+  background-color: rgb(226, 218, 218);
+  width: 15vw;
+  height: 170vh;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 2em;
+}
+
+.sidebar h2 {
+  font-size: 1.1em;
+  position: relative;
+  left: 0.7em;
+  top: 0.5em;
+  visibility: hidden;
+}
+
+.sidebar nav {
+  padding: 2em;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 1.3em;
+  padding: 1.3em 0em;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar li a:hover {
+  color: rgb(139, 129, 129);
+  transform: scale(2);
+}
+
+.menu {
+  /* transition: all 0.3sec ease-in; */
+}
+
+.menu:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  padding: 2em;
+  /* height: 100vh; */
+}
+
+.infoContainer {
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 78vh;
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2em;
+}
+
+.devInfo {
+  /* color: black;
+    font-size: 2em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.devPic img {
+  width: 21em;
+  height: 30em;
+  border-radius: 12px;
+  margin: 1.2em 2em;
+  box-shadow: -70px -5px -10px 34px gray;
+}
+
+.hello {
+  font-size: 2.7em;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: "Oswald", sans-serif;
+}
+
+.name {
+  font-weight: bold;
+  font-family: "Koulen", cursive;
+  font-size: 3em;
+}
+
+.about {
+  margin-top: 0.4em;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.moreAbout {
+  margin-top: 0.4em;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.para {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1em;
+  margin-top: 1.7em;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.btnMain {
+  padding: 0.6em;
+  /* padding: 1.2em 4.1em 1.2em 3.2em; */
+  padding-right: 2.1em;
+  text-align: center;
+
+  border: 1px solid white;
+  border-radius: 24px;
+  /* margin: auto; */
+  background-color: rgb(198, 198, 209);
+  font-weight: bold;
+  /* font-family: 'Koulen', cursive; */
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+  margin-left: 1.5em;
+  margin-top: 1.9em;
+  cursor: pointer;
+  margin-left: 2.9em;
+}
+
+.btnMain:hover {
+  background-color: white;
+  color: rgb(177, 177, 190);
+  border: 1px solid black;
+}
+
+.down {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social {
+  background-color: rgb(61, 55, 55);
+  width: 150vw;
+  height: 45vh;
+  position: absolute;
+  top: 125vh;
+  left: 0vw;
+  color: wheat;
+  display: inline-block;
+}
+
+.social h5 {
+  position: absolute;
+  top: 4em;
+  left: 4em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 1em;
+}
+
+.insta {
+  position: absolute;
+  left: 17em;
+  top: 9em;
+}
+
+.in {
+  position: absolute;
+  left: 11em;
+  top: 9em;
+}
+
+.twitter {
+  position: absolute;
+  left: 6em;
+  top: 9em;
+}
+
+.logo {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  /* width: 30vw;
+  height: 20vh;
+  border: 1px solid white; */
+  position: absolute;
+    left: 50em;
+    top: 3em;
+}
+.copyright h3{
+    font-size: 3em;
+    /* font-family: "Koulen", cursive;
+    font-family: "Koulen", cursive;
+    font-weight: 600; */
+    font-family: 'Macondo', cursive;
+}
+
+.copyright h3 {
+  color: wheat;
+  font-size: 5em;
+}
+.copyright span{
+    margin-top: 100px;
+    font-size:1.2em;
+    font-family: "Koulen", cursive;
+}
+.footer__copyright{
+    margin-top: 3em;
+}
+
+.contactForm {
+  margin-left: -2em;
+}
+/* .box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+} */
+
+form {
+  /* margin-top: 9em; */
+  /* border: 1px solid gray;
+    width: 50%; */
+  margin-left: -1.5em;
+  margin-top: 10vh;
+  display: inline-block;
+}
+
+.elements {
+  margin-left: 1em;
+  margin-top: 1.6em;
+  margin-left: 28vw;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.contactForm h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#clientEmail {
+  /* padding-right: 9em; */
+  width: 26vw;
+}
+
+#clientPhone {
+  /* padding-right: 9em; */
+  width: 26vw;
+}
+
+#clientName {
+  /* padding-right: 9em; */
+  width: 26vw;
+}
+
+#clientEnquiery {
+  /* padding-right: 9em; */
+  width: 26vw;
+  /* padding-bottom: 5em; */
+  height: 10vh;
+}
+
+.btn-contact {
+  margin-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 0.4em;
+  padding-left: 1.1em;
+  border-radius: 24px;
+  /* margin: auto; */
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgb(198, 198, 209);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.btn-contact:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(177, 177, 190);
+}
+
+#isClient {
+  border-radius: 24px;
+}
+
+.blogContainer h2 {
+  /* font-family: 'Oswald', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em; */
+
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.blogs {
+  margin-top: 2em;
+}
+
+.blogHeading {
+  margin-left: 2em;
+}
+
+.blogHeading h3 {
+  font-weight: bold;
+  font-family: "Koulen", cursive;
+  font-size: 2em;
+  font-family: "Zen Loop", cursive;
+  font-weight: bold;
+}
+
+.blogContainer p {
+  margin-top: 0.4em;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+}
+
+.btnBlog {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 0.1em;
+  color: white;
+  background-color: rgb(73, 72, 72);
+}
+
+.mainBlog {
+  height: 80vh;
+}
+
+/* .extension{
+    height: 53vh;
+    width: 18.12vw;
+    position: absolute;
+    left: 0px;
+    top: 81vh;
+    
+} */
+.btnBlog:hover {
+  border: 1px solid black;
+}
+
+.introContainer {
+  margin-left: 2em;
+}
+
+.introContainer h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin-top: 0 em;
+  margin-left: 1em;
+}
+
+.introContainer ul {
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 2em;
+}
+
+.introContainer p {
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.introContainer ul li {
+  /* text-decoration: none; */
+  /* list-style: none; */
+  font-size: 1.3em;
+}
+
+.skills {
+  margin-top: 3em;
+}
+
+.skills h2 {
+  margin-bottom: 1em;
+}
+
+.box {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 1em;
+}
+
+.box h5 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.3em;
+}
+
+.line {
+  margin-left: 2em;
+  width: 40vw;
+  height: 3vh;
+  border-radius: 24px;
+  border: 1px solid black;
+}
+
+.line1 {
+  margin-left: 10.4em;
+  /* width:40vw; */
+  animation-name: line1ani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: aqua;
+
+}
+
+@keyframes line1ani {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 40vw;
+  }
+}
+
+.line2 {
+  margin-left: 8.4em;
+  width: 40vw;
+  animation-name: line2ani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: rgb(16, 70, 70);
+}
+
+@keyframes line2ani {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 40vw;
+  }
+}
+
+.line3 {
+  animation-name: line3ani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: rgb(178, 202, 202);
+}
+
+@keyframes line3ani {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 15vw;
+  }
+}
+
+.line4 {
+  margin-left: 9.4em;
+  animation-name: line4ani;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  background-color: rgb(1, 14, 14);
+}
+
+@keyframes line4ani {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 30vw;
+  }
+}
+
+.myProject {
+  margin-top: 3em;
+  margin-left: 11em;
+  
+}
+.myProject h2{
+  margin-left: -2.5em;
+}
+.allProject {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project {
+  /* flex-basis: 2 0 25%; */
+  margin: 0.2em;
+  margin-top: 1em;
+  border: 1px solid black;
+  height: 20vh;
+  padding-top: 8vh;
+  width: 20vw;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 24px;
+  background-color: rgb(241, 212, 215);
+  transition: all 0.5s ease-in-out 0s;
+  /* margin-left: 1em; */
+  padding: 1em 2.5em;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-project {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.project:hover {
+  background-color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.serviceContainer h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin-top: 0 em;
+  margin-left: 1em;
+  font-weight: 800;
+}
+.serviceContainer h2:hover{
+  color: rgb(182, 179, 176);
+}
+.serviceBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3em;
+  margin-left: 1.2em;
+  flex-wrap: wrap;
+  align-items:center;
+}
+.serviceBox a{
+  text-decoration: none;
+}
+.allService{
+  width: 25vw;
+  height: 26vw;
+  border: 1px solid black;
+  margin-top: 2em;
+  border-radius: 24px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -70px -5px -10px 34px gray;
+  margin-left: 5em;
+  
+}
+.allService:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  color: black;
+}
+.allService h4{
+  /* margin: 28vh 7vw; */
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 1200;
+  font-size: 2.1em;
+}
+.webDeveloper{
+  color: white;
+  background-image: url("webdevback.jpg ");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+.cryptoTrader{
+  color: white;
+  background-image: url("cryptoback.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+.finance{
+  margin-top: 7em;
+  color: white;
+  background-image: url("financeback.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+.dataAnalyst{
+  margin-top: 7em;
+  color: white;
+  background-image: url("databack.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+
+.hamburger{
+  position: absolute;
+  top: 1em;
+  left: 0.5em;
+  cursor: pointer;
+}
+.cross{
+  position: absolute;
+  margin-left: 10em;
+  display: none;
+}
+.sidebarGo {
+  transform: translate(-600px, 0px);
+  position: absolute;
+}
+@media (max-width: 900px) {
+  * {
+    /* background-color: blue; */
+  }
+
+  /* .sidebar {
+    transform: translate(-500px, 0px);
+    position: absolute;
+  } */
+  .devPic{
+    display: none;
+  }
+  .container{
+    flex-wrap: wrap;
+  }
+  .down{
+    flex-wrap: wrap;
+  }
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media(max-width:600px){
+  .sidebar{
+    font-size: 0.5rem;
+  }
+  .allProject{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  .project{
+    margin-left: -3rem;
+  }
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box>div{
+    display: block;
+    margin-left: 5px;
+  }
+  .allService h4{
+    padding: 10rem;
+  }
+  .hamburger{
+    width: 5rem;
+  }
+  .cross{
+    margin-left: 1.5rem;
+}
+}
